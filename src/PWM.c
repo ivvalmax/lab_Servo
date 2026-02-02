@@ -2,14 +2,12 @@
 
 void PWMInit(void)
 {
-  TCCR3A = (1<<COM3A1)|(1<<COM3B1)|(1<<COM3C1)|(1<<WGM30);
-  TCCR3B = (1<<WGM32) | (1<<CS31);
-  OCR3AH = 0;
-  OCR3AL = 0;
-  OCR3BH = 0;
-  OCR3BL = 0;
-  OCR3CH = 0;
-  OCR3CL = 0;
+  TCCR1A = (1<<COM1A1)|(1<<COM1B1)|(1<<WGM10);
+  TCCR1B = (1<<WGM12)|(1<<CS11)|(1<<WGM13);
+  OCR1AH = 0;
+  OCR1AL = 0;
+  OCR1BH = 0;
+  OCR1BL = 0;
 }
 
 void PWMChange(Encoder_t* ledPtr)

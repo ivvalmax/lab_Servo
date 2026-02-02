@@ -13,4 +13,6 @@ typedef struct Servo
   uint16_t permission;
 } Servo_t;
 
+void servoInit(void);
+
 #endif
