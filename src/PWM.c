@@ -13,5 +13,4 @@ void PWMChange(Servo_t* sAdc, Servo_t* sEnc)
 {
   OCR1A = SERV_MIN + sAdc->position*2764/sAdc->permission;
   OCR1B = SERV_MIN + sEnc->position*2764/sEnc->permission;
-
 }
