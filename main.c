@@ -10,7 +10,12 @@ void allInit(void);
 
 int main(void)
 {
-
+  allInit();
+  adcStart();
+  while(1)
+  {
+    PWMChange(&servAdc, &servEnc);
+  }
 }
 
 void allInit(void)
