@@ -2,6 +2,7 @@
 #define ENCODER_H_
 
 #include "common.h"
+#include "servo.h"
 typedef struct Encoder
 {
   int16_t position;

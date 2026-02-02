@@ -3,8 +3,9 @@
 
 #include "common.h"
 #include "encoder.h"
+#include "servo.h"
 
 void PWMInit(void);
-void PWMChange(Encoder_t* ledPtr);
+void PWMChange(Servo_t* sAdc, Servo_t* sEnc);
 
 #endif
