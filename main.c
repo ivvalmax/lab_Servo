@@ -14,6 +14,7 @@ int main(void)
   adcStart();
   while(1)
   {
+    servAdc.position=adcRead();
     PWMChange(&servAdc, &servEnc);
   }
 }
